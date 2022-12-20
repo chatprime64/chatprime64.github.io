@@ -95,22 +95,22 @@
                 <div class="sideoptions" id="colorspref-section">
                     <p class="DroidSans break" style="margin: auto; display: block; color: white; text-align: center;">Preferred Colors:</p>
                     <button value="0" class="preferred preferredselected" onclick="togglePreferred(this)">
-                        <img class="selectionimage" src="/candy-crush-editor/elements/blue.png">
+                        <img class="selectionimage" src="elements/blue.png">
                     </button>
                     <button value="1" class="preferred preferredselected" onclick="togglePreferred(this)">
-                        <img class="selectionimage" src="/candy-crush-editor/elements/green.png">
+                        <img class="selectionimage" src="elements/green.png">
                     </button>
                     <button value="2" class="preferred preferredselected" onclick="togglePreferred(this)">
-                        <img class="selectionimage" src="/candy-crush-editor/elements/orange.png">
+                        <img class="selectionimage" src="elements/orange.png">
                     </button>
                     <button value="3" class="preferred preferredselected" onclick="togglePreferred(this)">
-                        <img class="selectionimage" src="/candy-crush-editor/elements/purple.png">
+                        <img class="selectionimage" src="elements/purple.png">
                     </button>
                     <button value="4" class="preferred preferredselected" onclick="togglePreferred(this)">
-                        <img class="selectionimage" src="/candy-crush-editor/elements/red.png">
+                        <img class="selectionimage" src="elements/red.png">
                     </button>
                     <button value="5" class="preferred" onclick="togglePreferred(this)">
-                        <img class="selectionimage" src="/candy-crush-editor/elements/yellow.png">
+                        <img class="selectionimage" src="elements/yellow.png">
                     </button>
                 </div>
                 <div class="sideoptions">
@@ -180,7 +180,7 @@
 
                         <tr>
                             <td> 
-                                <img class="elmimg" style="max-width: 70%;" src="/elements/cannon_ingredient.png"> 
+                                <img class="elmimg" style="max-width: 70%;" src="elements/cannon_ingredient.png"> 
                             </td> 
                             <td> 
                                 <input class="max" style="width: 50px; text-align: center;" placeholder="0" type="number" id="maxNumIngredientsOnScreen">
@@ -206,7 +206,7 @@
                     </button>
                     <div class="dropped" id="colordrop" style="display:none">
                         <button class="colorselected" onclick="updateColor(this, 'random')">
-                            <img class="selectionimage" src="/elements/random_ui.png">
+                            <img class="selectionimage" src="elements/random_ui.png">
                         </button>
                         
                     <button onclick="updateColor(this, &quot;red&quot;)"><img class="selectionimage" src="elements/red.png"></button><button onclick="updateColor(this, &quot;yellow&quot;)"><img class="selectionimage" src="elements/yellow.png"></button><button onclick="updateColor(this, &quot;blue&quot;)"><img class="selectionimage" src="elements/blue.png"></button><button onclick="updateColor(this, &quot;green&quot;)"><img class="selectionimage" src="elements/green.png"></button><button onclick="updateColor(this, &quot;orange&quot;)"><img class="selectionimage" src="elements/orange.png"></button><button onclick="updateColor(this, &quot;purple&quot;)"><img class="selectionimage" src="elements/purple.png"></button></div>
@@ -219,7 +219,7 @@
                     </button>
                     <div class="dropped" id="candy" style="display:none">
                         <button class="elementselected" onclick="updateSelection(this, 'random', 'normal')">
-                            <img class="selectionimage" src="/elements/random.png">
+                            <img class="selectionimage" src="elements/random.png">
                         </button>
                         
                     <button onclick="updateSelection(this, 'striped_horizontal', 'normal')"><img class="selectionimage" src="elements/striped_horizontal_random.png"></button><button onclick="updateSelection(this, 'striped_vertical', 'normal')"><img class="selectionimage" src="elements/striped_vertical_random.png"></button><button onclick="updateSelection(this, 'wrapped', 'normal')"><img class="selectionimage" src="elements/wrapped_random.png"></button><button onclick="updateSelection(this, 'pepper_candy', 'normal')"><img class="selectionimage" src="elements/pepper_candy_random.png"></button><button onclick="updateSelection(this, 'key', 'normal')"><img class="selectionimage" src="elements/key_random.png"></button><button onclick="updateSelection(this, 'lucky', 'normal')"><img class="selectionimage" src="elements/lucky_random.png"></button><button onclick="updateSelection(this, 'jellyfish', 'normal')"><img class="selectionimage" src="elements/jellyfish_random.png"></button><button onclick="updateSelection(this, 'jellyfish_striped', 'normal')"><img class="selectionimage" src="elements/jellyfish_striped_random.png"></button><button onclick="updateSelection(this, 'jellyfish_wrapped', 'normal')"><img class="selectionimage" src="elements/jellyfish_wrapped_random.png"></button><button onclick="updateSelection(this, 'jellyfish_colorbomb', 'normal')"><img class="selectionimage" src="elements/jellyfish_colorbomb_random.png"></button><button onclick="updateSelection(this, &quot;bomb&quot;, 'normal')"><img class="selectionimage" src="elements/bomb.png"></button><button onclick="updateSelection(this, &quot;coconut_wheel&quot;, 'normal')"><img class="selectionimage" src="elements/coconut_wheel.png"></button><button onclick="updateSelection(this, &quot;ufo&quot;, 'normal')"><img class="selectionimage" src="elements/ufo.png"></button><button onclick="updateSelection(this, &quot;bobber&quot;, 'normal')"><img class="selectionimage" src="elements/bobber.png"></button><button onclick="updateSelection(this, &quot;cake_bomb&quot;, 'normal')"><img class="selectionimage" src="elements/cake_bomb.png"></button></div>
@@ -243,10 +243,10 @@
                     </button>
                     <div class="dropped" id="tiles" style="display:none">
                         <button onclick="updateSelection(this, 'none', 'tile')">
-                            <img class="selectionimage" src="/elements/none_UI.png">
+                            <img class="selectionimage" src="elements/none_UI.png">
                         </button>
                         <button onclick="updateSelection(this, 'empty', 'tile')">
-                            <img class="selectionimage" src="/elements/empty_UI.png">
+                            <img class="selectionimage" src="elements/empty_UI.png">
                         </button>
                     <button onclick="updateSelection(this, &quot;grid&quot;, 'tile')"><img class="selectionimage" src="elements/grid.png"></button><button onclick="updateSelection(this, &quot;jelly&quot;, 'tile')"><img class="selectionimage" src="elements/jelly.png"></button><button onclick="updateSelection(this, &quot;jelly2&quot;, 'tile')"><img class="selectionimage" src="elements/jelly2.png"></button><button onclick="updateSelection(this, &quot;blue_tile&quot;, 'tile')"><img class="selectionimage" src="elements/blue_tile.png"></button><button onclick="updateSelection(this, &quot;black_tile&quot;, 'tile')"><img class="selectionimage" src="elements/black_tile.png"></button></div>
 
@@ -312,40 +312,40 @@
                     </button>
                     <div class="dropped" id="walls" style="display:none">
                         <button onclick="updateSelection(this, 'wall_down', 'walldown')" class="">
-                            <img class="selectionimage" src="/elements/wall_down_ui.png">
+                            <img class="selectionimage" src="elements/wall_down_ui.png">
                         </button>
                         <button onclick="updateSelection(this, 'wall_up', 'wallup')" class="">
-                            <img class="selectionimage" src="/elements/wall_up_ui.png">
+                            <img class="selectionimage" src="elements/wall_up_ui.png">
                         </button>
                         <button onclick="updateSelection(this, 'wall_left', 'wallleft')" class="">
-                            <img class="selectionimage" src="/elements/wall_left_ui.png">
+                            <img class="selectionimage" src="elements/wall_left_ui.png">
                         </button>
                         <button onclick="updateSelection(this, 'wall_right', 'wallright')" class="">
-                            <img class="selectionimage" src="/elements/wall_right_ui.png">
+                            <img class="selectionimage" src="elements/wall_right_ui.png">
                         </button>
                         <button onclick="updateSelection(this, 'destructible_wall_1_down', 'walldown')" class="">
-                            <img class="selectionimage" src="/elements/destructible_wall_1_down_ui.png">
+                            <img class="selectionimage" src="elements/destructible_wall_1_down_ui.png">
                         </button>
                         <button onclick="updateSelection(this, 'destructible_wall_1_up', 'wallup')" class="">
-                            <img class="selectionimage" src="/elements/destructible_wall_1_up_ui.png">
+                            <img class="selectionimage" src="elements/destructible_wall_1_up_ui.png">
                         </button>
                         <button onclick="updateSelection(this, 'destructible_wall_1_left', 'wallleft')" class="">
-                            <img class="selectionimage" src="/elements/destructible_wall_1_left_ui.png">
+                            <img class="selectionimage" src="elements/destructible_wall_1_left_ui.png">
                         </button>
                         <button onclick="updateSelection(this, 'destructible_wall_1_right', 'wallright')" class="">
-                            <img class="selectionimage" src="/elements/destructible_wall_1_right_ui.png">
+                            <img class="selectionimage" src="elements/destructible_wall_1_right_ui.png">
 			    </button>
                         <button onclick="updateSelection(this, 'licorice_wall_down', 'walldown')" class="">
-                            <img class="selectionimage" src="/elements/licorice_wall_down_ui.png">
+                            <img class="selectionimage" src="elements/licorice_wall_down_ui.png">
                         </button>
                         <button onclick="updateSelection(this, 'licorice_wall_up', 'wallup')" class="">
-                            <img class="selectionimage" src="/elements/licorice_wall_up_ui.png">
+                            <img class="selectionimage" src="elements/licorice_wall_up_ui.png">
                         </button>
                         <button onclick="updateSelection(this, 'licorice_wall_left', 'wallleft')" class="">
-                            <img class="selectionimage" src="/elements/licorice_wall_left_ui.png">
+                            <img class="selectionimage" src="elements/licorice_wall_left_ui.png">
                         </button>
                         <button onclick="updateSelection(this, 'licorice_wall_right', 'wallright')" class="">
-                            <img class="selectionimage" src="/elements/licorice_wall_right_ui.png">
+                            <img class="selectionimage" src="elements/licorice_wall_right_ui.png">
                         </button>
                     </div>
                     <button class="dropdown" onclick="toggleDropdown(this)" associd="bonbon">
