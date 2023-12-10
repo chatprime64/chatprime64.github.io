@@ -1,5 +1,75 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
+  <title>Minecraft Story Game</title>
+  <style>
+    /* Style the video container */
+    #video-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
     
-  </head>
+    /* Style the video element */
+    #video {
+      width: 100%;
+    }
+    
+    /* Position the options */
+    .options {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none; /* Hide the options initially */
+      gap: 20px;
+    }
+    
+    /* Style the option buttons */
+    .option-button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="video-container">
+    <video id="video" src="/video.mp4" controls></video>
+    <div class="options">
+      <button class="option-button" onclick="chooseOption('yes')">Yes</button>
+      <button class="option-button" onclick="chooseOption('no')">No</button>
+    </div>
+  </div>
+
+  <script>
+    const video = document.getElementById('video');
+    const options = document.querySelector('.options');
+    
+    // Add an event listener to detect when the video time updates
+    video.addEventListener('timeupdate', showOptions);
+    
+    // Function to show the options 10 seconds before the video ends
+    function showOptions() {
+      const currentTime = video.currentTime;
+      const duration = video.duration;
+      const timeRemaining = duration - currentTime;
+      
+      if (timeRemaining <= 10) {
+        options.style.display = 'flex';
+      }
+    }
+    
+    // Function to handle option selection
+    function chooseOption(option) {
+      if (option === 'yes') {
+        window.location.href = '/yes/index.html';
+      } else if (option === 'no') {
+        window.location.href = '/no/index.html';
+      }
+    }
+  </script>
+</body>
 </html>
